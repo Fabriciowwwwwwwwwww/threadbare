@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=4 uid="uid://7hoy2p14t6kc"]
+[gd_scene load_steps=52 format=4 uid="uid://7hoy2p14t6kc"]
 
 [ext_resource type="TileSet" uid="uid://oynx002hv8tl" path="res://tiles/water.tres" id="1_ftljy"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="2_0ayb4"]
@@ -16,15 +16,17 @@
 [ext_resource type="Script" uid="uid://c68oh8dtr21ti" path="res://scenes/game_logic/sequence_puzzle.gd" id="7_nonj7"]
 [ext_resource type="PackedScene" uid="uid://covsdqqsd6rsy" path="res://scenes/game_elements/props/sign/sign.tscn" id="8_evicy"]
 [ext_resource type="PackedScene" uid="uid://be4o3ythda4cu" path="res://scenes/game_elements/props/sequence_puzzle_hint_sign/sequence_puzzle_hint_sign.tscn" id="9_evicy"]
-[ext_resource type="Texture2D" uid="uid://ck738xogv1kp5" path="res://assets/third_party/tiny-swords/Deco/11.png" id="9_nonj7"]
 [ext_resource type="PackedScene" uid="uid://7873qa54birk" path="res://scenes/game_elements/props/tree/tree.tscn" id="13_inhg4"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="14_src2c"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="15_rxyid"]
 [ext_resource type="SpriteFrames" uid="uid://dtoylirwywk0j" path="res://scenes/game_elements/characters/components/sprite_frames/storyweaver_blue.tres" id="15_s3slv"]
 [ext_resource type="SpriteFrames" uid="uid://djwymcffy83" path="res://scenes/game_elements/props/tree/components/tree_spriteframes_red.tres" id="16_8nm0x"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="16_ytxvq"]
+[ext_resource type="PackedScene" uid="uid://bqkui35x5ly0" path="res://scenes/game_elements/props/decoration/crops/tomato.tscn" id="17_lbjl7"]
 [ext_resource type="PackedScene" uid="uid://crqjcicx0vdu" path="res://scenes/game_elements/props/decoration/bush/bush.tscn" id="17_wasqo"]
+[ext_resource type="PackedScene" uid="uid://c78fj5em5tpm5" path="res://scenes/game_elements/props/decoration/crops/carrot.tscn" id="18_gajpc"]
 [ext_resource type="SpriteFrames" uid="uid://bgckvdkxuxrgh" path="res://scenes/game_elements/props/decoration/bush/components/bush_spriteframes_red_large.tres" id="18_l4i5r"]
+[ext_resource type="PackedScene" uid="uid://ccpgw7k4rlmea" path="res://scenes/game_elements/props/decoration/crops/barley.tscn" id="19_pgedt"]
 [ext_resource type="PackedScene" uid="uid://b3lldk3lo2mwl" path="res://scenes/game_elements/characters/npcs/sequence_puzzle_assistant/sequence_puzzle_assistant.tscn" id="20_jdge0"]
 [ext_resource type="Script" uid="uid://ccc78coj2b1li" path="res://scenes/game_logic/sequence_puzzle_step.gd" id="20_thpfs"]
 [ext_resource type="Texture2D" uid="uid://ol20om7xc1o7" path="res://scenes/game_elements/props/buildings/house/components/House_Wool_Red_Stage1.png" id="20_wasqo"]
@@ -1284,77 +1286,59 @@ sprite_frames = ExtResource("18_l4i5r")
 position = Vector2(897, 777)
 sprite_frames = ExtResource("23_u8pjn")
 
-[node name="Crop7" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(992, 735)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop8" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(1041, 790)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop9" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(989, 790)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop11" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(679, 1053)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop12" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(739, 1053)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop13" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(1047, 1052)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop14" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(920, 1053)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop17" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(987, 1052)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop15" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(860, 1054)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop16" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(799, 1053)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop18" type="Sprite2D" parent="OnTheGround/Trees"]
+[node name="Tomato" parent="OnTheGround/Trees" instance=ExtResource("17_lbjl7")]
 position = Vector2(677, 1181)
-texture = ExtResource("9_nonj7")
 
-[node name="Crop19" type="Sprite2D" parent="OnTheGround/Trees"]
+[node name="Tomato2" parent="OnTheGround/Trees" instance=ExtResource("17_lbjl7")]
 position = Vector2(737, 1181)
-texture = ExtResource("9_nonj7")
 
-[node name="Crop20" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(1045, 1180)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop21" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(918, 1181)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop22" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(985, 1180)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop23" type="Sprite2D" parent="OnTheGround/Trees"]
-position = Vector2(858, 1182)
-texture = ExtResource("9_nonj7")
-
-[node name="Crop24" type="Sprite2D" parent="OnTheGround/Trees"]
+[node name="Tomato3" parent="OnTheGround/Trees" instance=ExtResource("17_lbjl7")]
 position = Vector2(797, 1181)
-texture = ExtResource("9_nonj7")
 
-[node name="Crop10" type="Sprite2D" parent="OnTheGround/Trees"]
+[node name="Tomato4" parent="OnTheGround/Trees" instance=ExtResource("17_lbjl7")]
+position = Vector2(858, 1182)
+
+[node name="Tomato5" parent="OnTheGround/Trees" instance=ExtResource("17_lbjl7")]
+position = Vector2(918, 1181)
+
+[node name="Tomato6" parent="OnTheGround/Trees" instance=ExtResource("17_lbjl7")]
+position = Vector2(985, 1180)
+
+[node name="Tomato7" parent="OnTheGround/Trees" instance=ExtResource("17_lbjl7")]
+position = Vector2(1045, 1180)
+
+[node name="Carrot" parent="OnTheGround/Trees" instance=ExtResource("18_gajpc")]
+position = Vector2(679, 1053)
+
+[node name="Carrot2" parent="OnTheGround/Trees" instance=ExtResource("18_gajpc")]
+position = Vector2(739, 1053)
+
+[node name="Carrot3" parent="OnTheGround/Trees" instance=ExtResource("18_gajpc")]
+position = Vector2(799, 1053)
+
+[node name="Carrot4" parent="OnTheGround/Trees" instance=ExtResource("18_gajpc")]
+position = Vector2(860, 1054)
+
+[node name="Carrot5" parent="OnTheGround/Trees" instance=ExtResource("18_gajpc")]
+position = Vector2(920, 1053)
+
+[node name="Carrot6" parent="OnTheGround/Trees" instance=ExtResource("18_gajpc")]
+position = Vector2(987, 1052)
+
+[node name="Carrot7" parent="OnTheGround/Trees" instance=ExtResource("18_gajpc")]
+position = Vector2(1047, 1052)
+
+[node name="Barley" parent="OnTheGround/Trees" instance=ExtResource("19_pgedt")]
+position = Vector2(992, 735)
+
+[node name="Barley2" parent="OnTheGround/Trees" instance=ExtResource("19_pgedt")]
 position = Vector2(1044, 737)
-texture = ExtResource("9_nonj7")
+
+[node name="Barley3" parent="OnTheGround/Trees" instance=ExtResource("19_pgedt")]
+position = Vector2(989, 790)
+
+[node name="Barley4" parent="OnTheGround/Trees" instance=ExtResource("19_pgedt")]
+position = Vector2(1041, 790)
 
 [node name="Player" parent="OnTheGround" instance=ExtResource("2_0ayb4")]
 position = Vector2(539, 1972)
@@ -1509,7 +1493,7 @@ curve = SubResource("Curve2D_306df")
 
 [node name="PlayerFollower" type="PathFollow2D" parent="ForestSoundPath"]
 position = Vector2(64, 2088)
-rotation = -1.58865
+rotation = -1.5493928
 script = ExtResource("22_nonj7")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="ForestSoundPath/PlayerFollower"]
@@ -1527,7 +1511,7 @@ curve = SubResource("Curve2D_l8fgn")
 
 [node name="PlayerFollower" type="PathFollow2D" parent="RiverSoundPath"]
 position = Vector2(-408, 1104)
-rotation = -0.0696546
+rotation = -0.12495447
 script = ExtResource("22_nonj7")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="RiverSoundPath/PlayerFollower"]
